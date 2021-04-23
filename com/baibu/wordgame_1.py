@@ -1,5 +1,5 @@
 print("welcome to my wordgame")
-temp = input("guess what numbers in the heart")
+temp = input("guess what numbers in the heart\n")
 guess = int(temp)
 if guess == 8:
 	print("right")
