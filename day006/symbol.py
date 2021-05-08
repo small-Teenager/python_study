@@ -37,7 +37,47 @@ print(a,b,id(a),id(b),type(a),type(b))
 a,b=b,a
 print(a,b,id(a),id(b),type(a),type(b))
 
+# 比较运算符 比较的是值,value
+a,b=10,20
+print('a>b?',a>b)
+print('a<b?',a<b)
+print('a<=b?',a<=b)
+print('a>=b?',a>=b)
+print('a=b?',a==b)
+print('a!=b?',a!=b)
 
+print('a',b,id(a),id(b))
+print('a is b',a is b) ## a,b的标识不一致
+c,d=1,1
+print('a',b,id(c),id(d))
+print('c is d',c is d) ## c,d的标识一致
+
+list1=[1,2,3,4]
+list2=[1,2,3,4]
+print(list1==list2)
+print(list1 is list2)
+print(list1 is not list2)
+print(list2,list2,id(list1),id(list2))
+
+# 布尔运算符 and , or , not, in, not in
+a,b=1,2
+print(a==1 and b==2) # true
+print(a==1 and b<2) # false
+print(a!=1 and b==2) #false
+
+print(a!=1 or b==2) #true
+
+f=True
+f2=False
+print(not f) # false
+print(not f2) #true
+
+str="hello world!"
+print("he" in str)
+print("he" not in str)
+
+
+# 位运算符
 
 
 
