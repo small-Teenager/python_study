@@ -49,12 +49,46 @@ print(set7.issuperset(set7))
 # 是否有交集  有交集False 无交集True
 print(set7.isdisjoint(set8))
 
+# 交集
 
+print('-------交集----------')
+set6 = {1, 2, 3}
+set7 = {1, 2, 4, 5}
+set8 = {4, 5}
+print(set6.intersection(set7))
+print(set6.intersection(set8))
+print(set6 & set7)
 
+# 并集
 
+print('---------并集-----------')
+set6 = {1, 2, 3}
+set7 = {1, 2, 4, 5}
+set8 = {4, 5}
+print(set6.union(set7))
+print(set6.union(set8))
+print(set6 | set7)
 
+# 差集
+print('---------差集-----------')
 
+set6 = {1, 2, 3}
+set7 = {1, 2, 4, 5}
+set8 = {4, 5}
+print(set6.difference(set7))
+print(set6 - set7)
+print(set7.difference(set6))
+print(set7 - set6)
 
+# 对称差集
+print('---------对称差集-----------')
+set6 = {1, 2, 3}
+set7 = {1, 2, 4, 5}
+set8 = {4, 5}
+print(set6.symmetric_difference(set7))
+print(set6 ^ set7)
+print(set7.symmetric_difference(set6))
+print(set7 ^ set6)
 
 
 
