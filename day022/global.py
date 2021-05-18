@@ -1,5 +1,5 @@
 def fun(a, b):
-    global c
+    global c  # 全局变量
     c = a + b
     return c
 
